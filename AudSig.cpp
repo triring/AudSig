@@ -11,7 +11,7 @@
  * ----------------------------------------------------------------------------
  */
 
-#include "Arduino.h"
+// #include "Arduino.h"
 #include <stdarg.h>
 #include "AudSig.h"
 
