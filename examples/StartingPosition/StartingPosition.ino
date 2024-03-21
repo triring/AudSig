@@ -11,7 +11,7 @@
  * ----------------------------------------------------------------------------
  */
 
-#include <AudSig.h>
+#include "AudSig.h"
 
 // 操作受付音 Operation reception signal
 // 基点音	starting position signal オブジェクトの生成  

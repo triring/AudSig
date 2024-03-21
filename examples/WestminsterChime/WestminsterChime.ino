@@ -11,7 +11,7 @@
  * ----------------------------------------------------------------------------
  */
 
-#include <AudSig.h>
+#include "AudSig.h"
 
 /*
  * WestminsterChime	ウェストミンスターの鐘（ウェストミンスターのかね、英語：Westminster Quarters）
