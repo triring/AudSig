@@ -114,12 +114,27 @@ void loop() {
 4. 報知音の再生  
 	ring() 関数を呼び出す。  
 
+## examples	サンプル
+
+examplesディレクトリ内のサンプルソースコードは、以下の通りである。  
+
+* StartingPosition	基点音
+* OperationReception	操作受付音
+* OperationInvalid	操作無効音
+* Caution	注意音
+* End	終了音
+
+* SOS	モールス符号による遭難信号
+* Jihou	NHKの時報
+* WestminsterChime	ウェストミンスターの鐘
+* PC98_PiPo	国民機パソコン PC98の起動音
+
 ## Trial listening	試聴
 
 このライブラリを使う前に、報知音がどのような音かを聞いてみたいという要望があった。  
 昔、報知音のサウンドファイルを生成するプログラムを作成していたので、それを整理して以下のリポジトリで公開した。
 
-	[JIS_S0013](https://github.com/triring/JIS_S0013)  
+[JIS_S0013](https://github.com/triring/JIS_S0013)  
 
 ここから、報知音のサウンドファイルをダウンロードし、試聴することが可能である。  
 
