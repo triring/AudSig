@@ -29,16 +29,16 @@ AudSig Poon(BUZZER_PIN, 3000, 0);   // 正報音(880Hz)
 
 void setup() {
   // begin()でピンモードの設定を行う。
-  Pi.begin();  // 予報音(440Hz) の初期設定
-  Pi.setFrequency(440);
-  Poon.begin();  // 正報音(880Hz) の初期設定
-  Poon.setFrequency(880);
+  Pi.begin();             // 予報音の初期設定
+  Pi.setFrequency(440);   // 周波数を440Hzに設定
+  Poon.begin();           // 正報音の初期設定
+  Poon.setFrequency(880); // 周波数を880Hzに設定
 }
 
 void loop() {
-  Pi.ring();    // 予報音(440Hz)  の再生 1秒
-  Pi.ring();    // 予報音(440Hz)  の再生 1秒
-  Pi.ring();    // 予報音(440Hz)  の再生 1秒
-  Poon.ring();  // 正報音(880Hz)  の再生 3秒
-  delay(4000);  // 4秒間の休止
+  Pi.ring();    // 予報音(440Hz)  の再生 0.05秒 + 休止 0.95秒 = 1秒
+  Pi.ring();    // 予報音(440Hz)  の再生 0.05秒 + 休止 0.95秒 = 1秒
+  Pi.ring();    // 予報音(440Hz)  の再生 0.05秒 + 休止 0.95秒 = 1秒
+  Poon.ring();  // 正報音(880Hz)  の再生 3.00秒
+  delay(4000);  // 4.00秒間の休止
 }

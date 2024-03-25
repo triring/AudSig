@@ -23,7 +23,7 @@ JIS S 0013:2022は、高齢者や障害者にも聞き取りやすい報知音�
 
 JISで規定されたと聞くと難しいものと思われるかもしれないが、配慮すべきは、以下の2点だけである。  
 
-* 音の高さ(周波数)は，聴力の衰えた高齢者にも聞き取りやすいよう，2kHz近傍にすることが望ましい。
+* 音の高さ(周波数)は，聴力の衰えた高齢者にも聞き取りやすいよう，2KHz近傍にすることが望ましい。
 * 用途・目的に応じ、例示されたon/offパターンに従って対象の報知音を再生する。
 
 定義された報知音は、以下のように分類されており、28種類のパターンがある。  
@@ -49,18 +49,20 @@ JISで規定されたと聞くと難しいものと思われるかもしれな�
 * [Arduino IDE](https://www.arduino.cc/en/software)
 	Ver. 2.3.2で検証を行った。  
 * Arduino 或いはその互換マイコンボードにブザー素子を取り付けたもの  
-	今回は、[cytron社](https://www.cytron.io/)の以下の製品を使用した。GPIO 22番ピンに圧電ブザーが接続されいる。  
+	今回は、[cytron](https://www.cytron.io/)社の以下の製品を使用した。
+	CPUは、Raspberry Pi財団が独自に開発したARM Cortex M0+デュアルコアのRP2040が搭載されている。  
+	GPIO 22番ピンに圧電ブザーが接続されている。  
 	Maker Nano RP2040: Simplifying Projects with Raspberry Pi RP2040  
 	https://www.cytron.io/c-development-tools/c-maker-series/p-maker-nano-rp2040-simplifying-projects-with-raspberry-pi-rp2040
 
 ## Setup	導入方法
 
-IDEにライブラリをインストールしない場合は、以下の2つのファイルをArduinoのソースコード.inoファイルと同じディレクトリにコピーしてからコンパイルして下さい。  
+IDEにライブラリをインストールしない場合は、以下の2つのファイルをArduinoのソースコード.inoファイルと同じディレクトリにコピーしてからコンパイルする。  
 
 * AudSig.cpp
 * AudSig.h
 
-IDEにライブラリをインストールする場合は、次の手順で導入してください。  
+IDEにライブラリをインストールする場合は、次の手順で導入する。  
 
 ### Install the library	ライブラリのインストール
 
@@ -129,6 +131,12 @@ examplesディレクトリ内のサンプルソースコードは、以下の通
 * WestminsterChime	ウェストミンスターの鐘
 * PC98_PiPo	国民機パソコン PC98の起動音
 
+IDEにライブラリをインストールした場合は、メニューバーから、以下のように辿るとこれらのサンプルを開くことができる。  
+
+* ファイル
+	- スケッチ例
+		- AudSig
+
 ## Trial listening	試聴
 
 このライブラリを使う前に、報知音がどのような音かを聞いてみたいという要望があった。  
@@ -157,9 +165,10 @@ examplesディレクトリ内のサンプルソースコードは、以下の通
 ### "THE BEER-WARE LICENSE" (Revision 42):
 <akio@triring.net> wrote this file. As long as you retain this notice you
 can do whatever you want with this stuff. If we meet some day, and you think this stuff is worth it, you can buy me a beer in return.
-Akio MIWA @triring
+Copyright (c) 2024 Akio MIWA @triring  
 
 ### "THE BEER-WARE LICENSE" (第42版):
 このファイルは、<akio@triring.net> が書きました。あなたがこの条文を載せている限り、あなたはソフトウェアをどのようにでも扱うことができます。
 もし、いつか私達が出会った時、あなたがこのソフトに価値があると感じたなら、見返りとして私にビールを奢ることができます。  
-Akio MIWA @triring
+Copyright (c) 2024 Akio MIWA @triring  
+
